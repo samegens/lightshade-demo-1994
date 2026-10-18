@@ -2,6 +2,8 @@
 
 We made this demo for [Bizarre 1994](https://www.pouet.net/party.php?which=10&when=1994) in Nijmegen. We finished in 6th place.
 
+You can find a video of the demo [here](https://vimeo.com/1236944253).
+
 ## Instructions
 
 Install [DOSBox Staging](https://www.dosbox-staging.org/).
