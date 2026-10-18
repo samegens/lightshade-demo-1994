@@ -1,0 +1,134 @@
+
+
+                **[[  LIGHTSHADE TECHNICAL INFORMATION  ]]**
+
+
+This file contains information on how-we-did-it topics.
+
+
+                         **** GENERAL INFORMATION ****
+
+For the music and sound effects we used ScreamTracker 3 from Future Crew. The
+sound effects in the demo are part of the musical score.
+
+To play the S3M-files, we used the MIDAS Sound System of Petteri Kangaslampi
+and Jarno Paanen (with some slight modifications).
+
+The graphics are mostly designed with Deluxe Paint II enhanced for PC. If you
+want to make pictures we strongly recommend this program.
+
+The demo is entirely coded using Borland's Turbo C++ 3.0 (only the C part, no
+classes, templates etc.) with lots of inline assembler (even 32bit code !).
+
+
+                             **** DOOMPLASMA ****
+
+This is just another subdivision plasma with palette rotation. The buildup
+algorithm for the plasma to shape itself around the sentences is a little
+more difficult though.
+
+
+                             **** CRAZY LOGO ****
+
+4 images - 4 bitplanes.
+
+
+                              **** STARFIELD ****
+
+Fixed point 3D star calculations. There are a total of 500 stars on the 
+screen all the way through.
+
+
+                             **** CROSSFADER ****
+
+Not too difficult either. A simple calculation shows that 16^2 is 256 color 
+combinations so each image can have 16 colors. This algorithm uses MORE than 
+16 colors per image, and all pictures together contain a great lot more than
+256 colors...
+
+
+                             **** WARP BEAR ****
+
+Bit image mapping. We applied a strange periodic function for the warping 
+(oil-on-water) effect.
+
+
+                             **** DIZZY BEAR ****
+
+Simple animation.
+
+
+                            **** ZOOMING BEAR ****
+
+We needed a black screen and fading out was too common.
+
+
+                       **** LIGHTSHADE TITLESCREEN ****
+
+Just another palette trick, nothing special.
+
+
+                              **** CREDITS ****
+
+The effect was too slow for an full-screen demo part so we used it here.
+
+
+                             **** GREETINGS ****
+
+No comment.
+
+
+                       **** MORE QUESTIONS / TIPS ****
+
+We will not release the sourcecode yet, maybe later sometime. A newer version
+will be considered (SB support, bugfixes, etc.), but we will mainly 
+concentrate on games (read DVISION!.NFO) or another demo.
+If you still have questions or tips, contact us (see DVISION!.NFO).
+
+CU.
+
+                                Simm, SAM.
+
+
+
+                       DVision Software Group 1994
+
+--------------------------------------------------------------------------------
+
+Some notes on LightShade 1.13:
+
+LightShade 1.0 (or just LightShade) depended heavily on an FPU (it had 
+floating point fading, for example). This wasn't such a problem for the 
+competition (486DX2-66), but for 386-processors without an FPU, the demo was 
+awfully slow. I fixed this (I wanted the demo to run on _my_ machine, a 
+386DX40 :) and so it should now run quite smooth on a fast
+386 with a fast videocard. Most of the old FPU-code has been changed to
+fixed point code. The no-music option has been added. Some minor bugs were 
+removed. 
+
+Once more:
+
+CU.
+
+                                SAM.
+
+--------------------------------------------------------------------------------
+
+Some notes on LightShade 1.15
+(LightShade 1.14 was not released, since it contained a rather old version of
+MIDAS)
+
+At last, I can enjoy the full demo on my machine (SB only)!!! With the help
+of the MIDAS Sound System, LightShade should now work with GUS, SB, PAS and
+Windows Sound System.
+
+We didn't have the possibility to test LightShade with a PAS (or Windows
+Sound System), but we think it'll work anyway.
+
+Thanks Petteri & Jarno, for creating MIDAS!
+
+And once again:
+
+CU.
+
+                                SAM.

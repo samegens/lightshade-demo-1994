@@ -1,0 +1,133 @@
+
+
+                       ..--++ L I G H T S H A D E ++--..
+
+                                Version 1.15
+                         DVision Software Group 1994
+                                 18-09-1994
+
+
+                 *********** GENERAL INFORMATION ************
+
+This file is to inform you of our first and newest demo: LightShade.
+This demo was actually made in 11 days and 6 hours total (well, with the
+revisions and all, it's quite possible it took a bit longer :) and has the
+following features:
+
+    - 486 or 386 required, preferably at 33 MHz and up
+      (you don't need a floating point coprocessor, as with the previous
+       version)
+    - VGA (a fast VGA is recommended)
+    - GUS 512Kb, SB or 100% compatible, PAS, Windows Sound System 
+    - Startup parameters to start the demo
+    - Harddisk installation required
+
+LightShade became 5th on Bizarre '94 (out of 9 :), with 56 points.
+Bizarre '94 took place on May 7 & 8 at Nijmegen. 
+Although we didn't win the contest, we were very proud of our first product.
+
+
+              ********** HOW TO INSTALL / RUN ***********
+
+You probably got this demo with the following files:
+ 
+    LISH.NFO     = this file
+    LISHTECH.NFO = how we did it
+    DVISION!.NFO = what we do and don't
+    LISH.EXE     = the actual executable
+    DV.000 .. DV.017
+                 = all demo data
+
+to install LightShade, copy these files to a directory on your harddisk.
+Now you can type:
+
+    LISH <starting point> <music volume>
+
+and the demo should start with a couple of questions concerning the soundcard 
+you want to use, I/O address, IRQ, DMA and mixing frequency. 
+The 'starting point' is one of the optional parameters. You can start
+LightShade at the following points:
+    0: start at the beginning
+    1: start at the CrazyLogo
+    2: start at the StarField
+    3: start at the CrossFader
+    4: start at the Title
+The other parameter is the music volume, but you can only set it if you also
+choose a starting point. Possible volumes are 0 to 64.
+
+It is wise to give LightShade all your memory, to avoid hangups and
+'Error loading ...' messages. LightShade needs about 512Kb of free main RAM
+and some EMS (for most soundcards). 
+
+LightShade has no demo-looping option (at least not yet).
+
+If you press a key during the demo, it will finish the current event and
+then quit to DOS.
+
+We couldn't test LightShade with PAS or Windows Sound System, so you have
+to figure out how much memory (conventional/EMS) you need with these
+soundcards.
+
+
+                   *********** TROUBLESHOOTING ************
+
+Here is a list of things that could go wrong (as far as we tested it) with 
+the appropriate solution:
+
+    P: I get "Error loading ..." messages.
+    S: You don't have all the data for the demo or you don't have enough free
+       memory. Try freeing some of the TSR's from memory (review your 
+       AUTOEXEC.BAT and CONFIG.SYS). For more information on how to do this,
+       read your DOS-manual.
+
+    P: I get a "MIDAS: out of conventional memory" error.
+    S: You probably don't have enough EMS-memory. Change your CONFIG.SYS
+       to install more EMS-memory (1024K should really be enough).
+
+    P: One part of the demo goes on too long and the music doesn't fit the 
+       demo anymore.
+    S: This could be several things: 
+           - you don't have a fast enough computer (or a fast enough VGA)
+           - you have a very fragmented or very slow harddisk 
+       Try to use a lower mixing frequency: the sound system uses a lot of
+       processing time.
+       Try unfragmenting your harddisk (COMPRESS) or use a disk cache like    
+       SmartDrive. If that doesn't work, wait for a newer version or buy a 
+       faster computer.
+
+    P: I hear nothing / nothing but UltraClicks.
+    S: Either you're someone making making fun of us or you have found a bug 
+       we couldn't find. It seems some GUSses are different then others.
+       Another possible source of trouble may be QEMM. Try running LightShade
+       without QEMM. 
+       Notify us when it still doesn't work and tell us exactly what your 
+       configuration is and what your TSR's are so we can pinpoint the problem 
+       for the newer versions. For information on how to contact us, read the 
+       DVISION!.NFO file.
+
+    P: The program is located on a DoubleSpace disk and it won't run.
+       (it may be possible you get a 'Stack overflow' error)
+    S: We don't know why, but DoubleSpace can cause serious problem when you
+       want to run LightShade. The only solution we know of, is installing
+       LightShade to an un-DoubleSpace-d disk.
+
+    P: I've got a PAS/Windows Sound System, but I can't get LightShade to
+       produce any sound.
+    S: Sorry to say it, but that's tough luck... PAS/WSS-support came with 
+       the sound-library we're using (MIDAS Sound System), but we don't have
+       a PAS/WSS, so we can't test it.
+
+We tested LightShade on the following systems/configs and it didn't cause any
+problems with those:
+    386DX40,ET4000: with/without SmartDrv, with/without Himem, 
+                    with/without DOS High&UMB, with/without EMM386
+    486DX40,Diamond Speedstar: SmartDrv, Himem, DOS High&UMB, EMM386
+    486DX33,Diamond Speedstar: SmartDrv, Himem, DOS High&UMB, EMM386
+    486DX33,Trident T8900: SmartDrv, Himem, DOS High&UMB, EMM386
+
+Hope you like(d) it and if you have anything to ask or say about LightShade,
+please contact us (read the file DVISION!.NFO on how to do that).
+
+CU.
+
+                                        Simm & SAM / DVision
